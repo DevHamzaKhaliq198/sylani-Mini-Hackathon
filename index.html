@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Hackathon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Registration Form -->
+        <div id="registerForm" class="form">
+            <h2>Registeration</h2>
+            <input type="email" id="registerEmail" placeholder="Email" required autocomplete="off">
+            <input type="password" id="registerPassword" placeholder="Password" required autocomplete="off">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="loginForm" class="form">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required autocomplete="off">
+            <input type="password" id="loginPassword" placeholder="Password" required autocomplete="off">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- To-Do Management -->
+        <div id="todoApp" class="form">
+            <h2>To-Do List</h2>
+            <div id="userEmailDisplay"></div>
+            <input type="text" id="todoTitle" placeholder="Title" required autocomplete="off">
+            <input type="text" id="todoDescription" placeholder="Description" required autocomplete="off">
+            <input type="date" id="todoDate" required>
+            <button onclick="addTodo()">Add To-Do</button>
+            <button onclick="viewTodos()">View To-Dos</button>
+            <ul id="todoList"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
